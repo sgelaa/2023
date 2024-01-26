@@ -3669,11 +3669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\mentor\\2023\\book\\BookNation\\BookNation.csproj",
+      "projectUniqueName": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
       "projectName": "BookNation",
-      "projectPath": "C:\\mentor\\2023\\book\\BookNation\\BookNation.csproj",
+      "projectPath": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
       "packagesPath": "C:\\Users\\tshepo.mabine\\.nuget\\packages\\",
-      "outputPath": "C:\\mentor\\2023\\book\\BookNation\\obj\\",
+      "outputPath": "C:\\mentor\\2023\\BookNation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tshepo.mabine\\AppData\\Roaming\\NuGet\\NuGet.Config",
