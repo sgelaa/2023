@@ -64,26 +64,26 @@ namespace BookNation.Controllers
             };
         }
 
-        // [HttpPost("update")]
-        // public async Task<ActionResult<Author>> Update(AuthorDto authorDto)
-        // {
+        [HttpPut("update/{id}")]
+        public async Task<ActionResult<Author>> Update(int id, AuthorDto authorDto)
+        {
+            var entry = await _context.Authors.Where(auth => auth.Id == id).FirstOrDefaultAsync();
+    
+            entry.Name = authorDto.Name;
+            entry.Surname = authorDto.Surname;
+            entry.ProductId = authorDto.ProductId;
 
-        //     var author = await _context.Authors.Where(auth => auth.Name == authorDto.Name 
-        //     && auth.Surname == authorDto.Surname
-        //     && auth.ProductId == authorDto.ProductId).FirstOrDefaultAsync();
+            _context.Authors.Update(entry);
+            await _context.SaveChangesAsync();
 
-        //     _context.Authors.Update(author);
-        //     await _context.SaveChangesAsync();
-
-        //     return new Author
-        //     {
-        //         Id = author.Id,
-        //         Name = author.Name,
-        //         Surname = author.Surname,
-        //         ProductId = author.ProductId
-        //     };
-        // }
-
+            return new Author
+            {
+                Id = entry.Id,
+                Name = entry.Name,
+                Surname = entry.Surname,
+                ProductId = entry.ProductId
+            };
+        }
 
         [HttpDelete("removeId")]
         public async Task<ActionResult<AuthorDto>> RemoveId(int removeId)
