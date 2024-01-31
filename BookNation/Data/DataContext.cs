@@ -17,5 +17,13 @@ namespace BookNation.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Author> Authors { get; set; }
 
+        public DbSet<AppAddress> AppAddresses { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderItem> OrderItems { get; set; }
+
+        public DbSet<Wishlist> Wishlists { get; set; }
+        public DbSet<WishlistItem> WishlistItems { get; set; }
+        public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
     }
 }
