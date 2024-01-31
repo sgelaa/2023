@@ -15,7 +15,7 @@ namespace BookNation.Controllers
             _context = context;
         }
 
-        [HttpGet("list")]
+        [HttpGet("all")]
         public async Task<ActionResult<IEnumerable<CategoryDto>>> CategoriesList()
         {
             var temp = await _context.Categories.ToListAsync();
