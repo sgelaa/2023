@@ -29,6 +29,41 @@ namespace BookNation.Controllers
             return user;
         }
 
+        [HttpPost("add")]
+        public async Task<ActionResult<AppAddressDto>> Add(AppAddressDto appAddressDto)
+        {
+            var address = new AppAddress
+            {
+                ReceipientName = appAddressDto.ReceipientName,
+                Type = appAddressDto.Type,
+                ReceipientNumber = appAddressDto.ReceipientNumber,
+                StreetAddress = appAddressDto.StreetAddress,
+                BuildingComplex = appAddressDto.BuildingComplex,
+                Suburb = appAddressDto.Suburb,
+                CityTown = appAddressDto.CityTown,
+                Province = appAddressDto.Province,
+                PostalCode = appAddressDto.PostalCode,
+                AppUserId = 1
+            };
+
+            _context.AppAddresses.Add(address);
+            await _context.SaveChangesAsync();
+
+            return new AppAddressDto
+            {
+                ReceipientName = address.ReceipientName,
+                Type = address.Type,
+                ReceipientNumber = address.ReceipientNumber,
+                StreetAddress = address.StreetAddress,
+                BuildingComplex = address.BuildingComplex,
+                Suburb = address.Suburb,
+                CityTown = address.CityTown,
+                Province = address.Province,
+                PostalCode = address.PostalCode,
+                AppUserId = address.AppUserId
+            };
+        }
+
         [HttpDelete("removeId")]
         public async Task<ActionResult<AppAddressDto>> RemoveId(int removeId)
         {
@@ -57,12 +92,42 @@ namespace BookNation.Controllers
                 Suburb = address.Suburb,
                 CityTown = address.CityTown,
                 Province = address.Province,
-                PostalCode = address.PostalCode,
+                PostalCode = address.PostalCode
             };
         }
 
+        [HttpPut("update/{id}")]
+        public async Task<ActionResult<AppAddressDto>> Update(int id, AppAddressDto appAddressDto)
+        {
+            var entry = await _context.AppAddresses.Where(auth => auth.Id == id).FirstOrDefaultAsync();
 
-        
+            entry.ReceipientName = appAddressDto.ReceipientName;
+            entry.Type = appAddressDto.Type;
+            entry.ReceipientNumber = appAddressDto.ReceipientNumber;
+            entry.StreetAddress = appAddressDto.StreetAddress;
+            entry.BuildingComplex = appAddressDto.BuildingComplex;
+            entry.Suburb = appAddressDto.Suburb;
+            entry.CityTown = appAddressDto.CityTown;
+            entry.Province = appAddressDto.Province;
+            entry.PostalCode = appAddressDto.PostalCode;
+
+            _context.AppAddresses.Update(entry);
+            await _context.SaveChangesAsync();
+
+            return new AppAddressDto
+            {
+                ReceipientName = entry.ReceipientName,
+                Type = entry.Type,
+                ReceipientNumber = entry.ReceipientNumber,
+                StreetAddress = entry.StreetAddress,
+                BuildingComplex = entry.BuildingComplex,
+                Suburb = entry.Suburb,
+                CityTown = entry.CityTown,
+                Province = entry.Province,
+                PostalCode = entry.PostalCode,
+            };
+        }
+
 
     }
 }

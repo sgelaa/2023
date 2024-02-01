@@ -11,5 +11,6 @@ namespace BookNation.DTO
         public string CityTown { get; set; }
         public string Province { get; set; }
         public string PostalCode { get; set; }
+        public int AppUserId { get; set; }
     }
 }

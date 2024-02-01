@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\mentor\\2023\\BookNation\\BookNation.csproj": {}
+    "D:\\projects\\dane\\2023\\BookNation\\BookNation.csproj": {}
   },
   "projects": {
-    "C:\\mentor\\2023\\BookNation\\BookNation.csproj": {
+    "D:\\projects\\dane\\2023\\BookNation\\BookNation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
+        "projectUniqueName": "D:\\projects\\dane\\2023\\BookNation\\BookNation.csproj",
         "projectName": "BookNation",
-        "projectPath": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
-        "packagesPath": "C:\\Users\\tshepo.mabine\\.nuget\\packages\\",
-        "outputPath": "C:\\mentor\\2023\\BookNation\\obj\\",
+        "projectPath": "D:\\projects\\dane\\2023\\BookNation\\BookNation.csproj",
+        "packagesPath": "C:\\Users\\tshep\\.nuget\\packages\\",
+        "outputPath": "D:\\projects\\dane\\2023\\BookNation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tshepo.mabine\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tshep\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
         }
       }
     }
