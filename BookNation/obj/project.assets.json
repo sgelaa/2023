@@ -3664,19 +3664,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tshep\\.nuget\\packages\\": {}
+    "C:\\Users\\tshepo.mabine\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\dane\\2023\\BookNation\\BookNation.csproj",
+      "projectUniqueName": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
       "projectName": "BookNation",
-      "projectPath": "D:\\projects\\dane\\2023\\BookNation\\BookNation.csproj",
-      "packagesPath": "C:\\Users\\tshep\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\dane\\2023\\BookNation\\obj\\",
+      "projectPath": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
+      "packagesPath": "C:\\Users\\tshepo.mabine\\.nuget\\packages\\",
+      "outputPath": "C:\\mentor\\2023\\BookNation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tshep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tshepo.mabine\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3748,7 +3748,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
