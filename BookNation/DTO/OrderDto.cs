@@ -1,10 +1,9 @@
-namespace BookNation.Entities
+namespace BookNation.DTO
 {
-    public class Order
+    public class OrderDto
     {
-        public int Id { get; set; }
         public DateTime OrderDate { get; set; }
-        public ICollection<OrderItem> OrderItems { get; set; }
+        public ICollection<OrderItemDto> OrderItems { get; set; }
         public string Status { get; set; }
         public double TotalAmount { get; set; }
         public int AppUserId { get; set; }
