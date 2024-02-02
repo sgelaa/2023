@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4uaTvovJAhjV2mhyqaUaiSyAbPP5J/GHKq2rD8WuqJTIyyZyI3KeqERiZePBCpF//rOyMYOpyJA1ukeborYfbw==",
+  "dgSpecHash": "wl0ISSP8lv+oxMu3K0n/nalV3rgittvXOCXtaTB3ZFIlRC/abz2DLvxiWQI2eni32QoSfFKaEeoMQPAEYTRLaA==",
   "success": true,
   "projectFilePath": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
   "expectedPackageFiles": [
@@ -77,7 +77,11 @@
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\tshepo.mabine\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\tshepo.mabine\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.15\\microsoft.netcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.15\\microsoft.windowsdesktop.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.15\\microsoft.aspnetcore.app.ref.7.0.15.nupkg.sha512",
+    "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.15\\microsoft.netcore.app.host.win-x64.7.0.15.nupkg.sha512"
   ],
   "logs": []
 }
