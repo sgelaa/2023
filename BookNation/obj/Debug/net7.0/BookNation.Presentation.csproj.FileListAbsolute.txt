@@ -104,3 +104,7 @@ C:\mentor\2023\BookNation\obj\Debug\net7.0\refint\BookNation.Presentation.dll
 C:\mentor\2023\BookNation\obj\Debug\net7.0\BookNation.Presentation.pdb
 C:\mentor\2023\BookNation\obj\Debug\net7.0\BookNation.Presentation.genruntimeconfig.cache
 C:\mentor\2023\BookNation\obj\Debug\net7.0\ref\BookNation.Presentation.dll
+C:\mentor\2023\BookNation\bin\Debug\net7.0\BookNation.DataAccess.dll
+C:\mentor\2023\BookNation\bin\Debug\net7.0\BookNation.Logic.dll
+C:\mentor\2023\BookNation\bin\Debug\net7.0\BookNation.DataAccess.pdb
+C:\mentor\2023\BookNation\bin\Debug\net7.0\BookNation.Logic.pdb

@@ -1,10 +1,11 @@
-﻿using BookNation.DataAccess.Entities;
+﻿using BookNation.Controllers;
+using BookNation.DataAccess.Entities;
 using BookNation.Logic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookNation.Presentation.Controllers
 {
-    public class CustomerController : Controller
+    public class CustomerController : BaseApiController
     {
         private readonly ICustomerService _customerService;
 
@@ -13,6 +14,7 @@ namespace BookNation.Presentation.Controllers
             _customerService = customerService;
         }
 
+        [HttpGet("All")]
         public async Task<ActionResult<IEnumerable<Customer>>> Index()
         {
             return Ok(await _customerService.GetCustomersAsync());

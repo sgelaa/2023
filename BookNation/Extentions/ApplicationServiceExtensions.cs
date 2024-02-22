@@ -19,6 +19,7 @@ namespace BookNation.Extensions
             // {
             //     opt.UseSqlite(config.GetConnectionString("DefaultConnection"));
             // });
+
             services.AddDbContext<AppDataContext>(opt =>
             {
                 opt.UseSqlServer(config.GetConnectionString("DefaultConnection"));

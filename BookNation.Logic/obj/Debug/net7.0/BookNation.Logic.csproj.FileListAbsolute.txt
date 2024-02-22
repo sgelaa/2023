@@ -1,0 +1,16 @@
+C:\mentor\2023\BookNation.Logic\bin\Debug\net7.0\BookNation.Logic.deps.json
+C:\mentor\2023\BookNation.Logic\bin\Debug\net7.0\BookNation.Logic.dll
+C:\mentor\2023\BookNation.Logic\bin\Debug\net7.0\BookNation.Logic.pdb
+C:\mentor\2023\BookNation.Logic\bin\Debug\net7.0\BookNation.DataAccess.dll
+C:\mentor\2023\BookNation.Logic\bin\Debug\net7.0\BookNation.DataAccess.pdb
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.csproj.AssemblyReference.cache
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.AssemblyInfoInputs.cache
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.AssemblyInfo.cs
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.csproj.CoreCompileInputs.cache
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.sourcelink.json
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.csproj.CopyComplete
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.dll
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\refint\BookNation.Logic.dll
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.pdb
+C:\mentor\2023\BookNation.Logic\obj\Debug\net7.0\ref\BookNation.Logic.dll

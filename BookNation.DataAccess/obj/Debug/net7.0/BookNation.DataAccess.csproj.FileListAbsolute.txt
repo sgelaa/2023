@@ -10,3 +10,6 @@ C:\mentor\2023\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.dll
 C:\mentor\2023\BookNation.DataAccess\obj\Debug\net7.0\refint\BookNation.DataAccess.dll
 C:\mentor\2023\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.pdb
 C:\mentor\2023\BookNation.DataAccess\obj\Debug\net7.0\ref\BookNation.DataAccess.dll
+C:\mentor\2023\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.csproj.AssemblyReference.cache
+C:\mentor\2023\BookNation.DataAccess\bin\Debug\net7.0\BookNation.DataAccess.runtimeconfig.json
+C:\mentor\2023\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.genruntimeconfig.cache

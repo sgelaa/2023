@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OqwbKdiYkuZczqNi99XHk3rB9kLo3Wv36wft9uEWVN4g9FL0zEXynm80n508r9rc45SGd8h4JQBU/sQdDnTuqA==",
+  "dgSpecHash": "ptregKxff7j+VVWP3YHyPdtUmBkarECymXB7GgF90T/zQrM++Up+kcoLLE8Q7kVo/v8oqBKq1+UdL/riH39iMg==",
   "success": true,
   "projectFilePath": "C:\\mentor\\2023\\BookNation\\BookNation.Presentation.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,7 @@
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
-    "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.11\\microsoft.entityframeworkcore.design.7.0.11.nupkg.sha512",
+    "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.9\\microsoft.entityframeworkcore.design.7.0.9.nupkg.sha512",
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\7.0.11\\microsoft.entityframeworkcore.sqlite.7.0.11.nupkg.sha512",
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\7.0.11\\microsoft.entityframeworkcore.sqlite.core.7.0.11.nupkg.sha512",
