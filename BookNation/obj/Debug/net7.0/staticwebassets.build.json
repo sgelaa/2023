@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "bF+5Kd/l9iYVnMKRri4cJilZLVJNP5OCrvonBPe3J2s=",
-  "Source": "BookNation",
-  "BasePath": "_content/BookNation",
+  "Hash": "7IOHYHQjEfIQ3xeFFM2P3MkfotseCoxdM/h1OtnbpYc=",
+  "Source": "BookNation.Presentation",
+  "BasePath": "_content/BookNation.Presentation",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

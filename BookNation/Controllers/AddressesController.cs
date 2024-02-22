@@ -15,7 +15,7 @@ namespace BookNation.Controllers
             _context = context;
         }
 
-        [HttpGet("all")]
+        [HttpGet("All")]
         public async Task<ActionResult<IEnumerable<AppAddress>>> GetAddressList()
         {
             var users = await _context.AppAddresses.ToListAsync();
@@ -29,7 +29,7 @@ namespace BookNation.Controllers
             return user;
         }
 
-        [HttpPost("add")]
+        [HttpPost("Add")]
         public async Task<ActionResult<AppAddressDto>> Add(AppAddressDto appAddressDto)
         {
             var address = new AppAddress
@@ -64,7 +64,7 @@ namespace BookNation.Controllers
             };
         }
 
-        [HttpDelete("removeId")]
+        [HttpDelete("{removeId}")]
         public async Task<ActionResult<AppAddressDto>> RemoveId(int removeId)
         {
             if (removeId == 0)
@@ -96,7 +96,7 @@ namespace BookNation.Controllers
             };
         }
 
-        [HttpPut("update/{id}")]
+        [HttpPut("Update/{id}")]
         public async Task<ActionResult<AppAddressDto>> Update(int id, AppAddressDto appAddressDto)
         {
             var entry = await _context.AppAddresses.Where(auth => auth.Id == id).FirstOrDefaultAsync();
@@ -127,7 +127,5 @@ namespace BookNation.Controllers
                 PostalCode = entry.PostalCode,
             };
         }
-
-
     }
 }

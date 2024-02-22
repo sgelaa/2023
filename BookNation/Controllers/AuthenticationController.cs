@@ -1,9 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using BookNation.Data;
 using BookNation.DTO;
 using BookNation.Entities;
@@ -24,7 +20,7 @@ namespace BookNation.Controllers
             this.context = context;
         }
 
-        [HttpPost("register")]
+        [HttpPost("Register")]
         public async Task<ActionResult<UserDto>> Register(RegisterDto registerDto)
         {
             if (await UserExists(registerDto.UserName))
@@ -55,10 +51,10 @@ namespace BookNation.Controllers
             };
         }
 
-        [HttpPost("login")]
+        [HttpPost("Login")]
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
         {
-             var user = await this.context.Users.SingleOrDefaultAsync(x => x.UserEmail == loginDto.Email);
+            var user = await this.context.Users.SingleOrDefaultAsync(x => x.UserEmail == loginDto.Email);
 
             if (user == null)
             {
@@ -76,19 +72,16 @@ namespace BookNation.Controllers
                     return Unauthorized("invalid password");
                 }
             }
-            
+
             return new UserDto
             {
                 Username = user.UserName,
                 Token = tokenService.CreateToken(user)
             };
         }
-
-
         private async Task<bool> UserExists(string username)
         {
             return await this.context.Users.AnyAsync(user => user.UserName == username.ToLower());
         }
-
     }
 }

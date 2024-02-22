@@ -54,7 +54,7 @@ namespace BookNation.Controllers
             };
         }
 
-        [HttpDelete("productId")]
+        [HttpDelete("{productId}")]
         public async Task<ActionResult<CartItemDto>> RemoveById(int productId)
         {
             if (productId == 0)
@@ -102,7 +102,6 @@ namespace BookNation.Controllers
 
         private async Task<bool> ProductinUserCart(Cart cart, CartItemDto cartItemDto)
         {
-
             return await _context.CartItems.AnyAsync(
                 cartItem => cartItem.CartId == cartItemDto.CartId &&
                 cartItem.ProductId == cartItemDto.ProductId

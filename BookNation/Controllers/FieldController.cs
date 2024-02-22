@@ -77,7 +77,7 @@ namespace BookNation.Controllers
             };
         }
 
-        [HttpDelete("removeId")]
+        [HttpDelete("{removeId}")]
         public async Task<ActionResult<ApplicableFieldDto>> RemoveById(int removeId)
         {
             if (removeId == 0)

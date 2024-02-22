@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wl0ISSP8lv+oxMu3K0n/nalV3rgittvXOCXtaTB3ZFIlRC/abz2DLvxiWQI2eni32QoSfFKaEeoMQPAEYTRLaA==",
+  "dgSpecHash": "OqwbKdiYkuZczqNi99XHk3rB9kLo3Wv36wft9uEWVN4g9FL0zEXynm80n508r9rc45SGd8h4JQBU/sQdDnTuqA==",
   "success": true,
-  "projectFilePath": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
+  "projectFilePath": "C:\\mentor\\2023\\BookNation\\BookNation.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\tshepo.mabine\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

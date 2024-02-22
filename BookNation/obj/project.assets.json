@@ -1356,6 +1356,32 @@
             "rid": "win"
           }
         }
+      },
+      "BookNation.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.9"
+        },
+        "compile": {
+          "bin/placeholder/BookNation.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookNation.DataAccess.dll": {}
+        }
+      },
+      "BookNation.Logic/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "BookNation.DataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BookNation.Logic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BookNation.Logic.dll": {}
+        }
       }
     }
   },
@@ -3651,10 +3677,22 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BookNation.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../BookNation.DataAccess/BookNation.DataAccess.csproj",
+      "msbuildProject": "../BookNation.DataAccess/BookNation.DataAccess.csproj"
+    },
+    "BookNation.Logic/1.0.0": {
+      "type": "project",
+      "path": "../BookNation.Logic/BookNation.Logic.csproj",
+      "msbuildProject": "../BookNation.Logic/BookNation.Logic.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "BookNation.DataAccess >= 1.0.0",
+      "BookNation.Logic >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.11",
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.11",
@@ -3669,9 +3707,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
-      "projectName": "BookNation",
-      "projectPath": "C:\\mentor\\2023\\BookNation\\BookNation.csproj",
+      "projectUniqueName": "C:\\mentor\\2023\\BookNation\\BookNation.Presentation.csproj",
+      "projectName": "BookNation.Presentation",
+      "projectPath": "C:\\mentor\\2023\\BookNation\\BookNation.Presentation.csproj",
       "packagesPath": "C:\\Users\\tshepo.mabine\\.nuget\\packages\\",
       "outputPath": "C:\\mentor\\2023\\BookNation\\obj\\",
       "projectStyle": "PackageReference",
@@ -3689,7 +3727,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\mentor\\2023\\BookNation.DataAccess\\BookNation.DataAccess.csproj": {
+              "projectPath": "C:\\mentor\\2023\\BookNation.DataAccess\\BookNation.DataAccess.csproj"
+            },
+            "C:\\mentor\\2023\\BookNation.Logic\\BookNation.Logic.csproj": {
+              "projectPath": "C:\\mentor\\2023\\BookNation.Logic\\BookNation.Logic.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -16,7 +16,7 @@ namespace BookNation.Controllers
             _context = context;
         }
 
-        [HttpGet("all")]
+        [HttpGet("All")]
         public async Task<ActionResult<IEnumerable<Author>>> GetProducts()
         {
             var products = await _context.Authors.ToListAsync();
@@ -30,14 +30,14 @@ namespace BookNation.Controllers
             return author;
         }
 
-        [HttpGet("allof/{productId}")]
+        [HttpGet("AllofProduct/{productId}")]
         public async Task<ActionResult<IEnumerable<Author>>> GetAllAuthorsForId(int productId)
         {
             var authors = await _context.Authors.Where(auth => auth.ProductId == productId).ToListAsync();
             return authors;
         }
 
-        [HttpPost("add")]
+        [HttpPost("Add")]
         public async Task<ActionResult<Author>> Add(AuthorDto authorDto)
         {
             if (await AuthorExists(authorDto.Name, authorDto.Surname, authorDto.ProductId))
@@ -64,7 +64,7 @@ namespace BookNation.Controllers
             };
         }
 
-        [HttpPut("update/{id}")]
+        [HttpPut("Update/{id}")]
         public async Task<ActionResult<Author>> Update(int id, AuthorDto authorDto)
         {
             var entry = await _context.Authors.Where(auth => auth.Id == id).FirstOrDefaultAsync();
@@ -85,7 +85,7 @@ namespace BookNation.Controllers
             };
         }
 
-        [HttpDelete("removeId")]
+        [HttpDelete("Remove/{removeId}")]
         public async Task<ActionResult<AuthorDto>> RemoveId(int removeId)
         {
             if (removeId == 0)
@@ -110,7 +110,7 @@ namespace BookNation.Controllers
             };
         }
 
-        [HttpDelete("remove")]
+        [HttpDelete("Remove")]
         public async Task<ActionResult<AuthorDto>> Remove(AuthorDto authorDto)
         {
             if (authorDto.Name.IsNullOrEmpty() || authorDto.Surname.IsNullOrEmpty())
@@ -135,7 +135,6 @@ namespace BookNation.Controllers
                 Surname = author.Surname
             };
         }
-
         private async Task<bool> AuthorExists(string name, string surname, int productId)
         {
             return await _context.Authors.AnyAsync(auth => auth.Name.ToLower() == name.ToLower()
