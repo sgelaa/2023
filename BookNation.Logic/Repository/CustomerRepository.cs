@@ -1,13 +1,14 @@
 ﻿using BookNation.DataAccess.Data;
 using BookNation.DataAccess.Entities;
+using BookNation.Logic.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace BookNation.DataAccess.Interfaces
+namespace BookNation.Logic.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly AppDataContext  _appDataContext;
-        public CustomerRepository(AppDataContext appDataContext) {
+        private readonly DataContext  _appDataContext;
+        public CustomerRepository(DataContext appDataContext) {
             _appDataContext = appDataContext;
         }
 

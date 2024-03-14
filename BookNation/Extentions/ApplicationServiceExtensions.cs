@@ -1,9 +1,10 @@
 
 using BookNation.Data;
 using BookNation.DataAccess.Data;
-using BookNation.DataAccess.Interfaces;
 using BookNation.Interfaces;
-using BookNation.Logic;
+using BookNation.Logic.Interfaces;
+using BookNation.Logic.Repository;
+using BookNation.Logic.Services;
 using BookNation.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,15 +15,9 @@ namespace BookNation.Extensions
         public static IServiceCollection AddApplicationServices(this IServiceCollection services,
         IConfiguration config)
         {
-            //  "DefaultConnection": "Data source=booknation.db"
-            // services.AddDbContext<DataContext>(opt =>
-            // {
-            //     opt.UseSqlite(config.GetConnectionString("DefaultConnection"));
-            // });
-
-            services.AddDbContext<AppDataContext>(opt =>
+            services.AddDbContext<DataAccess.Data.DataContext>(opt =>
             {
-                opt.UseSqlServer(config.GetConnectionString("DefaultConnection"));
+                opt.UseSqlite(config.GetConnectionString("SqliteConnection"));
             });
 
             services.AddScoped<ICustomerRepository, CustomerRepository>();

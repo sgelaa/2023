@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookNation.DataAccess.Data
 {
-    public class AppDataContext : DbContext
+    public class DataContext : DbContext
     {
-        public AppDataContext(DbContextOptions<AppDataContext> options) 
+        public DataContext(DbContextOptions<DataContext> options) 
             : base(options) { }
 
         public DbSet<Customer> Customers { get; set; }

@@ -1,8 +1,8 @@
 ﻿using BookNation.DataAccess.Entities;
 
-namespace BookNation.DataAccess.Interfaces
+namespace BookNation.Logic.Interfaces
 {
-    public interface ICustomerRepository
+    public interface ICustomerService
     {
         Task<IEnumerable<Customer>> GetCustomersAsync();
     }

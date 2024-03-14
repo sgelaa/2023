@@ -1,6 +1,6 @@
 ﻿using BookNation.Controllers;
 using BookNation.DataAccess.Entities;
-using BookNation.Logic;
+using BookNation.Logic.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookNation.Presentation.Controllers

@@ -1,7 +1,7 @@
 ﻿using BookNation.DataAccess.Entities;
-using BookNation.DataAccess.Interfaces;
+using BookNation.Logic.Interfaces;
 
-namespace BookNation.Logic
+namespace BookNation.Logic.Services
 {
     public class CustomerService : ICustomerService
     {
@@ -11,7 +11,6 @@ namespace BookNation.Logic
         {
             _customerRepository = customerRepository;
         }
-
         public async Task<IEnumerable<Customer>> GetCustomersAsync()
         {
             return await _customerRepository.GetCustomersAsync();
