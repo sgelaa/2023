@@ -1,0 +1,15 @@
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\bin\Debug\net7.0\BookNation.Logic.deps.json
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\bin\Debug\net7.0\BookNation.Logic.dll
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\bin\Debug\net7.0\BookNation.Logic.pdb
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.AssemblyInfoInputs.cache
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.AssemblyInfo.cs
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.csproj.CoreCompileInputs.cache
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.dll
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\refint\BookNation.Logic.dll
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.pdb
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\ref\BookNation.Logic.dll
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\bin\Debug\net7.0\BookNation.DataAccess.dll
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\bin\Debug\net7.0\BookNation.DataAccess.pdb
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.csproj.AssemblyReference.cache
+C:\Users\tshepo.mabine\Desktop\book\BookNation.Logic\obj\Debug\net7.0\BookNation.Logic.csproj.CopyComplete

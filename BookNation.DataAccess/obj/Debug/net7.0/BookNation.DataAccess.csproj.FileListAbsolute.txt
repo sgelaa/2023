@@ -1,0 +1,14 @@
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\bin\Debug\net7.0\BookNation.DataAccess.deps.json
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\bin\Debug\net7.0\BookNation.DataAccess.runtimeconfig.json
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\bin\Debug\net7.0\BookNation.DataAccess.dll
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\bin\Debug\net7.0\BookNation.DataAccess.pdb
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.csproj.AssemblyReference.cache
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.AssemblyInfoInputs.cache
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.AssemblyInfo.cs
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.dll
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\refint\BookNation.DataAccess.dll
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.pdb
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\BookNation.DataAccess.genruntimeconfig.cache
+C:\Users\tshepo.mabine\Desktop\book\BookNation.DataAccess\obj\Debug\net7.0\ref\BookNation.DataAccess.dll
