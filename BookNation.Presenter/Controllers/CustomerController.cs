@@ -1,6 +1,6 @@
 ﻿using BookNation.DataAccess.DTO;
 using BookNation.DataAccess.Entities;
-using BookNation.Logic.Interfaces;
+using BookNation.Logic.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

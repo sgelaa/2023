@@ -1,9 +1,10 @@
 using BookNation.DataAccess.Data;
 using BookNation.DataAccess.DTO;
 using BookNation.DataAccess.Entities;
+using BookNation.Logic.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace BookNation.DataAccess.Interfaces
+namespace BookNation.Logic.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
@@ -19,6 +20,7 @@ namespace BookNation.DataAccess.Interfaces
             {
                 Name = customerDto.Name,
                 City = customerDto.City,
+                DateAdded = DateTime.Now
             };
 
             _context.Customers.Add(customer);
@@ -28,13 +30,13 @@ namespace BookNation.DataAccess.Interfaces
             {
                 Id = customer.Id,
                 Name = customer.Name,
-                City = customer.City
+                City = customer.City,
+                DateAdded = customer.DateAdded
             };
         }
 
         public async Task<Customer> GetCustomerAsync(int id)
         {
-            //var customer = await _context.Customers.FindAsync(id);
             var customer = await _context.Customers
                 .Where(customer => customer.Id == id).FirstOrDefaultAsync();
             return customer;
@@ -56,7 +58,8 @@ namespace BookNation.DataAccess.Interfaces
             {
                 Id = customer.Result.Id,
                 Name = customer.Result.Name,
-                City = customer.Result.City
+                City = customer.Result.City,
+                DateAdded = customer.Result.DateAdded
             };
         }
     }

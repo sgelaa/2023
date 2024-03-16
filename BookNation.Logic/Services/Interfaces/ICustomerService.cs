@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookNation.Logic.Interfaces
+namespace BookNation.Logic.Services.Interfaces
 {
     public interface ICustomerService
     {

@@ -1,13 +1,14 @@
 ﻿using BookNation.DataAccess.DTO;
 using BookNation.DataAccess.Entities;
-using BookNation.DataAccess.Interfaces;
+using BookNation.Logic.Repository.Interfaces;
+using BookNation.Logic.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookNation.Logic.Interfaces
+namespace BookNation.Logic.Services
 {
     public class CustomerService : ICustomerService
     {

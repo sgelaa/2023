@@ -1,10 +1,13 @@
 
 using Microsoft.EntityFrameworkCore;
 using BookNation.DataAccess.Data;
-using BookNation.DataAccess.Interfaces;
-using BookNation.Logic.Interfaces;
 using BookNation.Presenter.Interfaces;
 using BookNation.Presenter.Services;
+using BookNation.Logic.Services;
+using BookNation.Logic.Services.Interfaces;
+using BookNation.Logic.Repository.Interfaces;
+using BookNation.Logic.Repository;
+using BookNation.Logic.Interfaces;
 
 namespace BookNation.Extensions
 {
@@ -23,7 +26,11 @@ namespace BookNation.Extensions
             });
 
             services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<IUsersRepository, UsersRepository>();
+            
+            
             services.AddScoped<ICustomerService, CustomerService>();
+            services.AddScoped<IUsersService, UsersService>();
 
             // services.AddScoped<ICustomerRepository, CustomerRepository>();
             // services.AddScoped<ICustomerService, CustomerService>();

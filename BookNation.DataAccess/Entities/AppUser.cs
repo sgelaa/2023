@@ -15,5 +15,6 @@ namespace BookNation.DataAccess.Entities
         public string UserPhone { get; set; }
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
+        public DateTime DateCreated { get; set; }
     }
 }

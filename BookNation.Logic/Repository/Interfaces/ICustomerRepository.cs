@@ -1,7 +1,7 @@
 using BookNation.DataAccess.DTO;
 using BookNation.DataAccess.Entities;
 
-namespace BookNation.DataAccess.Interfaces
+namespace BookNation.Logic.Repository.Interfaces
 {
     public interface ICustomerRepository
     {

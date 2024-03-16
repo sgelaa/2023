@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookNation.Logic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+922f7b529f321d7a7c6966c28a2d0bf908165b52")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookNation.Logic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookNation.Logic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

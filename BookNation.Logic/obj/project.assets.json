@@ -3646,11 +3646,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tshepo.mabine\\Desktop\\book\\BookNation.Logic\\BookNation.Logic.csproj",
+      "projectUniqueName": "C:\\mentor\\2023\\BookNation.Logic\\BookNation.Logic.csproj",
       "projectName": "BookNation.Logic",
-      "projectPath": "C:\\Users\\tshepo.mabine\\Desktop\\book\\BookNation.Logic\\BookNation.Logic.csproj",
+      "projectPath": "C:\\mentor\\2023\\BookNation.Logic\\BookNation.Logic.csproj",
       "packagesPath": "C:\\Users\\tshepo.mabine\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tshepo.mabine\\Desktop\\book\\BookNation.Logic\\obj\\",
+      "outputPath": "C:\\mentor\\2023\\BookNation.Logic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tshepo.mabine\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3667,8 +3667,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\tshepo.mabine\\Desktop\\book\\BookNation.DataAccess\\BookNation.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\tshepo.mabine\\Desktop\\book\\BookNation.DataAccess\\BookNation.DataAccess.csproj"
+            "C:\\mentor\\2023\\BookNation.DataAccess\\BookNation.DataAccess.csproj": {
+              "projectPath": "C:\\mentor\\2023\\BookNation.DataAccess\\BookNation.DataAccess.csproj"
             }
           }
         }

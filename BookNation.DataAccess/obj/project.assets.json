@@ -3754,11 +3754,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tshepo.mabine\\Desktop\\book\\BookNation.DataAccess\\BookNation.DataAccess.csproj",
+      "projectUniqueName": "C:\\mentor\\2023\\BookNation.DataAccess\\BookNation.DataAccess.csproj",
       "projectName": "BookNation.DataAccess",
-      "projectPath": "C:\\Users\\tshepo.mabine\\Desktop\\book\\BookNation.DataAccess\\BookNation.DataAccess.csproj",
+      "projectPath": "C:\\mentor\\2023\\BookNation.DataAccess\\BookNation.DataAccess.csproj",
       "packagesPath": "C:\\Users\\tshepo.mabine\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tshepo.mabine\\Desktop\\book\\BookNation.DataAccess\\obj\\",
+      "outputPath": "C:\\mentor\\2023\\BookNation.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tshepo.mabine\\AppData\\Roaming\\NuGet\\NuGet.Config",
