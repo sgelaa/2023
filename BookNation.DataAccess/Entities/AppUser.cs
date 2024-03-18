@@ -16,5 +16,7 @@ namespace BookNation.DataAccess.Entities
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
         public DateTime DateCreated { get; set; }
+
+        public ICollection<AppResource> Resources { get; set; }
     }
 }
