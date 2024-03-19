@@ -1,2 +1,16 @@
 BookNation.DataAccess/bin/*
 BookNation.Presenter/obj/*
+BookNation.Presenter/bin/Debug/net7.0/BookNation.Presenter.pdb
+BookNation.DataAccess/bin/Debug/net7.0/BookNation.DataAccess.dll
+BookNation.Logic/bin/Debug/net7.0/BookNation.DataAccess.pdb
+BookNation.Logic/bin/Debug/net7.0/BookNation.DataAccess.dll
+BookNation.DataAccess/obj/Debug/net7.0/refint/BookNation.DataAccess.dll
+BookNation.DataAccess/obj/Debug/net7.0/ref/BookNation.DataAccess.dll
+BookNation.DataAccess/obj/Debug/net7.0/BookNation.DataAccess.sourcelink.json
+BookNation.DataAccess/obj/Debug/net7.0/BookNation.DataAccess.pdb
+BookNation.DataAccess/obj/Debug/net7.0/BookNation.DataAccess.dll
+BookNation.DataAccess/obj/Debug/net7.0/BookNation.DataAccess.csproj.CoreCompileInputs.cache
+BookNation.DataAccess/obj/Debug/net7.0/BookNation.DataAccess.AssemblyInfoInputs.cache
+BookNation.DataAccess/obj/Debug/net7.0/BookNation.DataAccess.AssemblyInfo.cs
+BookNation.DataAccess/bin/Debug/net7.0/BookNation.DataAccess.pdb
+BookNation.DataAccess/bin/Debug/net7.0/BookNation.DataAccess.dll
