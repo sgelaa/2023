@@ -7,7 +7,7 @@ namespace BookNation.Logic.Repository.Interfaces
 {
     public interface IAuthorRepository
     {
-        Task<IEnumerable<Author>> GetAuthorAsync();
+        Task<IEnumerable<Author>> GetAuthorsAsync();
         Task<Author> GetAuthorAsync(int id);
         Task<Author> AddAuthorAsync(AuthorDto authorDto);
         Task<Author> RemoveAuthorAsync(int removeId);

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookNation.Logic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e61be58024e117df7d214a7797b9b347abbe14fa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c621fe9fdb5d21917bc079495f801906c7c21b2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookNation.Logic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookNation.Logic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
