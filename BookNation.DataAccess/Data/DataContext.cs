@@ -14,5 +14,6 @@ namespace BookNation.DataAccess.Data
 
     public DbSet<Customer> Customers { get; set; }
     public DbSet<AppUser> Users { get; set; }
+    public DbSet<Author> Authors { get; set; }
   }
 }
