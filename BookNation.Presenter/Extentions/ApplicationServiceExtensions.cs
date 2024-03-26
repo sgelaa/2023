@@ -22,15 +22,13 @@ namespace BookNation.Extensions
                 opt.UseSqlServer(config.GetConnectionString("SqlServerLocalConnection"));
             });
 
+            // repo
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IUsersRepository, UsersRepository>();
 
-
+            // service
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IUsersService, UsersService>();
-
-            // services.AddScoped<ICustomerRepository, CustomerRepository>();
-            // services.AddScoped<ICustomerService, CustomerService>();
 
             services.AddCors();
 
