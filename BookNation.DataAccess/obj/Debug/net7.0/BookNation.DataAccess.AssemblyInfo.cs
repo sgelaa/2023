@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookNation.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d8ce219557ca6b18c957f71dbbadb90e2b0cbe2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99d334c97c0e98c352e7aee52d09a538c018d7cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookNation.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookNation.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
