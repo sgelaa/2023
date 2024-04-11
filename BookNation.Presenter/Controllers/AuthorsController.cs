@@ -34,6 +34,19 @@ namespace BookNation.Presenter.Controllers
             return Created("new author created.", await _authorService.AddAuthorAsync(authorDto));
         }
 
+        [HttpPut("Update/{updateId}")]
+        public async Task<ActionResult<Author>> Update(int updateId, AuthorDto authorDto)
+        {
+            if (await _authorService.GetAuthorAsync(updateId) != null)
+            {
+                return Ok(await _authorService.UpdateAuthorAsync(updateId, authorDto));
+            }
+            else
+            {
+                return BadRequest("Author with provided Id not found");
+            }
+        }
+
         [HttpDelete("Remove/{removeId}")]
         public async Task<ActionResult<Author>> RemoveId(int removeId)
         {

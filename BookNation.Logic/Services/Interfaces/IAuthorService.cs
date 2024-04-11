@@ -8,6 +8,7 @@ namespace BookNation.Logic.Services.Interfaces
         Task<IEnumerable<Author>> GetAuthorsAsync();
         Task<Author> GetAuthorAsync(int id);
         Task<Author> AddAuthorAsync(AuthorDto authorDto);
+        Task<Author> UpdateAuthorAsync(int id, AuthorDto authorDto);
         Task<Author> RemoveAuthorAsync(int removeId);
 
     }

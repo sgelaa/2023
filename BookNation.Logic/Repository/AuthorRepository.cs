@@ -66,5 +66,21 @@ namespace BookNation.Logic.Repository
                 DateAdded = author.Result.DateAdded
             };
         }
+
+        public async Task<Author> UpdateAuthorAsync(int id, AuthorDto authorDto)
+        {
+            var author = await this.GetAuthorAsync(id);
+
+            if (author != null)
+            {
+                author.Name = authorDto.Name;
+                author.Surname = authorDto.Surname;
+                _context.Authors.Update(author);
+            }
+
+            await _context.SaveChangesAsync();
+
+            return author;
+        }
     }
 }

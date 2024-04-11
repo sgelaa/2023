@@ -33,5 +33,10 @@ namespace BookNation.Logic.Services
         {
             return await _authorRepository.RemoveAuthorAsync(removeId);
         }
+
+        public async Task<Author> UpdateAuthorAsync(int id, AuthorDto authorDto)
+        {
+            return await _authorRepository.UpdateAuthorAsync(id, authorDto);
+        }
     }
 }
