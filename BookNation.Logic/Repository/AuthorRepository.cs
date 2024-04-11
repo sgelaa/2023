@@ -41,7 +41,7 @@ namespace BookNation.Logic.Repository
             return await _context.Authors.ToListAsync();
         }
 
-        public async Task<Author?> GetAuthorAsync(int id)
+        public async Task<Author> GetAuthorAsync(int id)
         {
             var author = await _context.Authors
                 .Where(author => author.Id == id).FirstOrDefaultAsync();

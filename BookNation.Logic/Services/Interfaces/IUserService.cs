@@ -3,7 +3,7 @@ using BookNation.DataAccess.Entities;
 
 namespace BookNation.Logic.Services.Interfaces
 {
-    public interface IUsersService
+    public interface IUserService
     {
         Task<AppUser> AddUserAsync(RegisterDto registerDto);
 

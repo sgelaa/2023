@@ -5,9 +5,10 @@ namespace BookNation.Logic.Services.Interfaces
 {
     public interface IAuthorService
     {
-        Task<IEnumerable<Author>> GetAuthorAsync();
+        Task<IEnumerable<Author>> GetAuthorsAsync();
         Task<Author> GetAuthorAsync(int id);
         Task<Author> AddAuthorAsync(AuthorDto authorDto);
         Task<Author> RemoveAuthorAsync(int removeId);
+
     }
 }

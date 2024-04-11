@@ -24,11 +24,13 @@ namespace BookNation.Extensions
 
             // repo
             services.AddScoped<ICustomerRepository, CustomerRepository>();
-            services.AddScoped<IUsersRepository, UsersRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
 
             // service
             services.AddScoped<ICustomerService, CustomerService>();
-            services.AddScoped<IUsersService, UsersService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAuthorService, AuthorService>();
 
             services.AddCors();
 

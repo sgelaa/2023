@@ -7,9 +7,9 @@ namespace BookNation.Presenter.Controllers
 {
     public class UsersController : BaseApiController
     {
-        private readonly IUsersService _usersService;
+        private readonly IUserService _usersService;
 
-        public UsersController(IUsersService usersService)
+        public UsersController(IUserService usersService)
         {
             _usersService = usersService;
         }

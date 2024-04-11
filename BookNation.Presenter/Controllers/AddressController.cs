@@ -1,9 +1,7 @@
-﻿using BookNation.Presenter.Controllers;
-
-namespace BookNation.Presenter
+﻿namespace BookNation.Presenter.Controllers
 {
     public class AddressController : BaseApiController
     {
-        
+
     }
 }

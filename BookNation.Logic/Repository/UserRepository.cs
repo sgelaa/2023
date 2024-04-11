@@ -8,10 +8,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookNation.Logic.Repository
 {
-    public class UsersRepository : IUsersRepository
+    public class UserRepository : IUserRepository
     {
         private readonly DataContext _context;
-        public UsersRepository(DataContext context)
+        public UserRepository(DataContext context)
         {
             _context = context;
         }

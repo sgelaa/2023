@@ -2,19 +2,14 @@
 using BookNation.DataAccess.Entities;
 using BookNation.Logic.Repository.Interfaces;
 using BookNation.Logic.Services.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookNation.Logic.Interfaces
 {
-    public class UsersService : IUsersService
+    public class UserService : IUserService
     {
-        public readonly IUsersRepository _userRepository;
+        public readonly IUserRepository _userRepository;
 
-        public UsersService(IUsersRepository userRepository)
+        public UserService(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
