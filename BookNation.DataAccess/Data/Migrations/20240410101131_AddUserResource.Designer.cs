@@ -4,6 +4,7 @@ using BookNation.DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookNation.DataAccess.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20240410101131_AddUserResource")]
+    partial class AddUserResource
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -79,14 +82,14 @@ namespace BookNation.DataAccess.Data.Migrations
                     b.Property<string>("ResourceHost")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ResourceType")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("ResourceType")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("Resources");
+                    b.ToTable("AppResource");
                 });
 
             modelBuilder.Entity("BookNation.DataAccess.Entities.AppUser", b =>

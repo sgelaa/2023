@@ -32,10 +32,8 @@ namespace BookNation.Presenter.Controllers
             return Ok(await _usersService.AddUserAsync(registerDto));
         }
 
-        // if (await UserExists(registerDto.UserEmail))
-        // {
-        //     return BadRequest("UserEmail taken");
-        // }
+        // [HttpPut("Update")]
+        // public async Task<ActionResult> UpdateUser(UpdateUserDto updateDto){}
     }
 
 }
