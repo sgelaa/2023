@@ -2,6 +2,7 @@
 using BookNation.DataAccess.Data;
 using BookNation.DataAccess.DTO;
 using BookNation.Logic.Repository.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookNation.Logic;
 
@@ -37,9 +38,9 @@ public class AddressRepository : IAddressRepository
         return address;
     }
 
-    public Task<IEnumerable<AppAddress>> GetAddressesAsync()
+    public async Task<IEnumerable<AppAddress>> GetAddressesAsync()
     {
-        throw new NotImplementedException();
+        return await _context.Addresses.ToListAsync();
     }
 
     public Task<AppAddress> GetAddressesAsync(int id)
