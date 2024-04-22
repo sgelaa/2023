@@ -1,12 +1,12 @@
 pipeline {
     agent any
 
-   environment {
+    environment {
         DOTNET_CLI_TELEMETRY_OPTOUT = 'true' // Optional: Disable telemetry
     }
 
     stages {
-                stage('Checkout') {
+        stage('Checkout') {
             steps {
                 // Checkout your source code from your version control system (e.g., Git)
                 git 'https://github.com/yourusername/your-repository.git'
@@ -49,7 +49,7 @@ pipeline {
             }
         }
 
-         stage('Deploy') {
+        stage('Deploy') {
             steps {
                 // Example deployment step
                 // This could be deploying to a server, container, or any other deployment process
@@ -73,5 +73,5 @@ pipeline {
             // You can include notifications, cleanup steps, etc.
             echo 'Pipeline failed!'
         }
-    }
+        }
 }
