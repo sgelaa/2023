@@ -58,28 +58,28 @@ pipeline {
                 script {
                     sh 'echo "Deploying..."'
 
-            // Deploy to IIS
-                // # Define the variables
-                $websiteName = "YourWebsiteName"
-                $publishFolder = "./publish"
-                $physicalPath = "C:\\inetpub\\wwwroot\\$websiteName"
+                    // Deploy to IIS
+                    // # Define the variables
+                    $websiteName = "YourWebsiteName"
+                    $publishFolder = "./publish"
+                    $physicalPath = "C:\\inetpub\\wwwroot\\$websiteName"
 
-                // # Create the website if it doesn't exist
-                if (-not (Test-Path "IIS:\Sites\$websiteName")) {
-                    New-WebSite -Name $websiteName -Port 80 -PhysicalPath $physicalPath
-                }
+                    // # Create the website if it doesn't exist
+                    if (-not (Test-Path "IIS:\Sites\$websiteName")) {
+                        New-WebSite -Name $websiteName -Port 80 -PhysicalPath $physicalPath
+                    }
 
-                // # Stop the website before deploying
-                Stop-WebSite -Name $websiteName
+                    // # Stop the website before deploying
+                    Stop-WebSite -Name $websiteName
 
-                // # Remove the content from the physical path
-                Remove-Item "$physicalPath\*" -Force -Recurse
+                    // # Remove the content from the physical path
+                    Remove-Item "$physicalPath\*" -Force -Recurse
 
-                // # Copy the published files to the physical path
-                Copy-Item "$publishFolder\*" -Destination $physicalPath -Recurse
+                    // # Copy the published files to the physical path
+                    Copy-Item "$publishFolder\*" -Destination $physicalPath -Recurse
 
-                // # Start the website after deployment
-                Start-WebSite -Name $websiteName
+                    // # Start the website after deployment
+                    Start-WebSite -Name $websiteName
 
                 }
             }
