@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your source code from your version control system (e.g., Git)
-                git 'https://github.com/yourusername/your-repository.git'
+                git 'https://github.com/sgelaa/2023.git'
             }
         }
 
@@ -57,6 +57,30 @@ pipeline {
                 // For example, if deploying to Azure, you might use Azure CLI commands here
                 script {
                     sh 'echo "Deploying..."'
+
+            // Deploy to IIS
+                // # Define the variables
+                $websiteName = "YourWebsiteName"
+                $publishFolder = "./publish"
+                $physicalPath = "C:\\inetpub\\wwwroot\\$websiteName"
+
+                // # Create the website if it doesn't exist
+                if (-not (Test-Path "IIS:\Sites\$websiteName")) {
+                    New-WebSite -Name $websiteName -Port 80 -PhysicalPath $physicalPath
+                }
+
+                // # Stop the website before deploying
+                Stop-WebSite -Name $websiteName
+
+                // # Remove the content from the physical path
+                Remove-Item "$physicalPath\*" -Force -Recurse
+
+                // # Copy the published files to the physical path
+                Copy-Item "$publishFolder\*" -Destination $physicalPath -Recurse
+
+                // # Start the website after deployment
+                Start-WebSite -Name $websiteName
+
                 }
             }
         }
