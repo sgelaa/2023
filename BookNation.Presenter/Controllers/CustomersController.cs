@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore;
 namespace BookNation.Presenter.Controllers
 {
 
-    public class CustomerController : BaseApiController
+    public class CustomersController : BaseApiController
     {
         private readonly ICustomerService _customerService;
 
-        public CustomerController(ICustomerService customerService)
+        public CustomersController(ICustomerService customerService)
         {
             _customerService = customerService;
         }

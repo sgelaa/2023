@@ -1,6 +1,6 @@
 ﻿namespace BookNation.Presenter.Controllers
 {
-    public class AddressController : BaseApiController
+    public class AddressesController : BaseApiController
     {
 
     }
