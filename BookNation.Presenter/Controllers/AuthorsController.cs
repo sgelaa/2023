@@ -24,8 +24,15 @@ namespace BookNation.Presenter.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Author>> GetAuthorId(int id)
         {
-            var author = await _authorService.GetAuthorAsync(id);
-            return Ok(author);
+            try
+            {
+                var author = await _authorService.GetAuthorAsync(id);
+                return Ok(author);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         [HttpPost("Add")]

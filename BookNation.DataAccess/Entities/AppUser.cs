@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookNation.DataAccess.Entities
+﻿namespace BookNation.DataAccess.Entities
 {
     public class AppUser
     {
@@ -16,7 +10,5 @@ namespace BookNation.DataAccess.Entities
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
         public DateTime DateCreated { get; set; }
-        // public ICollection<AppResource> Resources { get; set; }
-        
     }
 }

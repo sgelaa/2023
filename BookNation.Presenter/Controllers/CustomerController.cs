@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookNation.Presenter.Controllers
 {
+
     public class CustomerController : BaseApiController
     {
         private readonly ICustomerService _customerService;
@@ -37,7 +38,15 @@ namespace BookNation.Presenter.Controllers
         [HttpDelete("Remove/{removeId}")]
         public async Task<ActionResult<Customer>> RemoveId(int removeId)
         {
-            return Ok(await _customerService.RemoveCustomerAsync(removeId));
+            try 
+            {
+                var removed = await _customerService.RemoveCustomerAsync(removeId);
+            return Ok(removed);
+            }
+            catch (Exception e) 
+            {
+                return BadRequest(e.Message);
+            }
         }
     }
 }

@@ -19,7 +19,7 @@ namespace BookNation.Logic.Services
             return await _customerRepository.AddCustomerAsync(customerDto);
         }
 
-        public async Task<Customer> GetCustomerAsync(int id)
+        public async Task<Customer?> GetCustomerAsync(int id)
         {
             return await _customerRepository.GetCustomerAsync(id);
         }

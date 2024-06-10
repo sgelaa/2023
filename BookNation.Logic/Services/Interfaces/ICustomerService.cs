@@ -11,7 +11,7 @@ namespace BookNation.Logic.Services.Interfaces
     public interface ICustomerService
     {
         Task<IEnumerable<Customer>> GetCustomersAsync();
-        Task<Customer> GetCustomerAsync(int id);
+        Task<Customer?> GetCustomerAsync(int id);
         Task<Customer> AddCustomerAsync(CustomerDto customerDto);
         Task<Customer> RemoveCustomerAsync(int id);
     }

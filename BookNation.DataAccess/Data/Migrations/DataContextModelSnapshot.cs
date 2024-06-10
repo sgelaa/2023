@@ -70,9 +70,6 @@ namespace BookNation.DataAccess.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AppUserId")
-                        .HasColumnType("int");
-
                     b.Property<string>("LinkId")
                         .HasColumnType("nvarchar(max)");
 
@@ -86,8 +83,6 @@ namespace BookNation.DataAccess.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("AppUserId");
 
                     b.ToTable("Resources");
                 });
@@ -168,20 +163,6 @@ namespace BookNation.DataAccess.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
-                });
-
-            modelBuilder.Entity("BookNation.DataAccess.Entities.AppResource", b =>
-                {
-                    b.HasOne("BookNation.DataAccess.Entities.AppUser", null)
-                        .WithMany("Resources")
-                        .HasForeignKey("AppUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("BookNation.DataAccess.Entities.AppUser", b =>
-                {
-                    b.Navigation("Resources");
                 });
 #pragma warning restore 612, 618
         }

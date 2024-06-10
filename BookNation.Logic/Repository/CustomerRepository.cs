@@ -35,7 +35,7 @@ namespace BookNation.Logic.Repository
             };
         }
 
-        public async Task<Customer> GetCustomerAsync(int id)
+        public async Task<Customer?> GetCustomerAsync(int id)
         {
             var customer = await _context.Customers
                 .Where(customer => customer.Id == id).FirstOrDefaultAsync();
