@@ -1,6 +1,7 @@
 ﻿using BookNation.DataAccess.Data;
 using BookNation.DataAccess.Entities;
 using BookNation.Logic.Repository.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookNation.Logic.Repository
 {
@@ -26,6 +27,11 @@ namespace BookNation.Logic.Repository
             _context.Resources.Add(res);
             await _context.SaveChangesAsync();
             return res;
+        }
+
+        public async Task<IEnumerable<AppResource>> GetAllResourceAsync()
+        {
+            return await _context.Resources.ToListAsync();
         }
 
         public async Task<AppResource?> GetResourceAsync(int id)

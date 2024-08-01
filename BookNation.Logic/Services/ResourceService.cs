@@ -18,6 +18,11 @@ namespace BookNation.Logic.Services
             return await _resourceRepository.AddResourceAsync(resource);
         }
 
+        public async Task<IEnumerable<AppResource>> GetAllResourceAsync()
+        {
+            return await _resourceRepository.GetAllResourceAsync();
+        }
+
         public async Task<AppResource?> GetResourceAsync(int id)
         {
             return await _resourceRepository.GetResourceAsync(id);
